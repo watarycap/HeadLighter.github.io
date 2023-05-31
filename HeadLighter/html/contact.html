@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="website icon" type="png" href="../Img/Logo.png">
+    <meta charset="utf-8">
+    <title>HeadLighter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Noto+Sans+Chorasmian&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul id="BV">
+            <li id="logo"><img src="../Img/Logo.png" alt="Image" height="100" width="100"></li>
+            <li id="BV1">BIENVENUE CHEZ HEADLIGHTER</li>
+        </ul>
+        <ul id="nav">
+            <li class="nav"><a class="lien" href="accueil.html">ACCUEIL</a></li>
+            <li class="nav"><a class="lien" href="contact.php">CONTACT</a></li>
+            <li class="nav"><a class="lien" href="boutique.html">BOUTIQUE</a></li>
+            <li class="nav"><a class="lien" href="panier.php">PANIER</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="main-image"></div>
+        <br>
+        <br>
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form action="envoyer_formulaire.php" method="POST">
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone">
+              </div>
+              
+              <div class="form-group">
+                <label for="sujet">Sujet :</label>
+                <input type="text" id="sujet" name="sujet" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              
+              <button class="submit-button" type="submit">Envoyer</button>
+            </form>
+          </div>
+
+    </main>
+    <footer>
+    </footer>
+    <script>
+        // Récupérer le chemin de la page actuelle
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        // Sélectionner tous les éléments <a> dans la liste de navigation
+          var links = document.querySelectorAll("#nav a");
+    
+          // Parcourir les liens et ajouter la classe "active" à celui correspondant à la page actuelle
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            var href = link.getAttribute("href");
+    
+            if (href === page) {
+            link.classList.add("active");
+        }
+    }
+        </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5; /* Couleur de fond */
+  }
+  
+  #BV {
+    order: -1;
+  }
+  
+  #logo {
+    order: -1;
+  }
+  
+  #BV1 {
+    font-weight: bold;
+    padding: 2vw;
+    font-size: xx-large;
+  }
+  
+  #nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between; /* Alignement égal des éléments */
+  }
+  
+  .nav {
+    padding-right: 8vw;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  a:link 
+{ 
+ text-decoration:none; 
+}
+.lien
+{
+    text-decoration: none;/*Pour que le lien ne soit plus "souligné"...*/
+    color: rgb(0, 0, 0); /*ça reste un exemple*/
+}
+
+#banniere
+{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+@media screen and (max-width: 600px) 
+{
+    /* Adjust the image size for smaller screens */
+    #banniere {
+      width: 100%;
+      height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+    
+    #nav {
+      margin-top: 2vh;
+    }
+}
+#main-image 
+{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://primary.jwwb.nl/unsplash/VfUN94cUy4o.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom -200px; /* Ajuster la valeur "50px" selon vos besoins */
+}
+main {
+  padding: 2vw;
+}
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2vw;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+#prd1 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.prd1 {
+  width: 10vw; /* Remplacez par la largeur souhaitée */
+  height: auto; /* Ajuste automatiquement la hauteur en conservant les proportions */
+  margin: 10px;
+}
+p
+{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}

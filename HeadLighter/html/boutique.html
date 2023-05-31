@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="..\CSS\boutique.css">
+        <link rel="website icon" type="png" href="..\Img\Logo.png">
+    <meta charset="utf-8">
+    <title>HeadLighter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=Dosis&family=Noto+Sans+Chorasmian&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul id="BV">
+            <li id="logo"><img src="..\Img\Logo.png" alt="Image" height="100" width="100"></li>
+            <li id="BV1">BIENVENUE CHEZ HEADLIGHTER</li>
+        </ul>
+        <ul id="nav">
+            <li class="nav"><a class="lien" href="accueil.html">ACCUEIL</a></li>
+            <li class="nav"><a class="lien" href="contact.html">CONTACT</a></li>
+            <li class="nav"><a class="lien" href="boutique.html">BOUTIQUE</a></li>
+            <li class="nav"><a class="lien" href="panier.php">PANIER</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="main-image"></div>
+        <div id="products">
+            <!-- Exemple de produit -->
+            <div class="product">
+                <h2>Casque Clignotant Noir</h2>
+                <p>La légèreté et la solidité du carbone sont des avantages clés de notre casque. Ce casque est résistant aux chocs et permet d'être plus en sécurité grâce au clignotant arrière.</p>
+                <div id="prd">
+                    <img class="prd1" src="../Img/1.png">
+                    <img class="prd1" src="../Img/Product2.png">
+                    <img class="prd1" src="../Img/Product3.png">
+                </div>
+                <p>105.00€</p>
+                <form action="panier.php" method="post">
+                    <input type="hidden" name="product_name" value="Casque Clignotant Noir">
+                    <input type="hidden" name="product_price" value="82.00">
+                    <button type="submit" class="product-button">Ajouter au Panier</button>
+                </form>
+            </div><div class="product">
+                <h2>Casque Clignotant Blanc</h2>
+                <p>La légèreté et la solidité du carbone sont des avantages clés de notre casque. Ce casque est résistant aux chocs et permet d'être plus en sécurité grâce au clignotant arrière.</p>
+                <div id="prd">
+                    <img class="prd1" src="../Img/111.png">
+                    <img class="prd1" src="../Img/112.png">
+                    <img class="prd1" src="../Img/113.png">
+                </div>
+                <p>105.00€</p>
+                <form action="panier.php" method="post">
+                    <input type="hidden" name="product_name" value="Casque Clignotant Blanc">
+                    <input type="hidden" name="product_price" value="82.00">
+                    <button type="submit" class="product-button">Ajouter au Panier</button>
+                </form>
+            </div>
+            <div class="product">
+                <h2>Casque Clignotant Bleu</h2>
+                <p>La légèreté et la solidité du carbone sont des avantages clés de notre casque. Ce casque est résistant aux chocs et permet d'être plus en sécurité grâce au clignotant arrière.</p>
+                <div id="prd">
+                    <img class="prd1" src="../Img/211.png">
+                    <img class="prd1" src="../Img/212.png">
+                    <img class="prd1" src="../Img/213.png">
+                </div>
+                <p>105.00€</p>
+                <form action="panier.php" method="post">
+                    <input type="hidden" name="product_name" value="Casque Clignotant Bleu">
+                    <input type="hidden" name="product_price" value="82.00">
+                    <button type="submit" class="product-button">Ajouter au Panier</button>
+                </form>
+            </div>
+            <div class="product">
+                <h2>Casque Clignotant Vert</h2>
+                <p>La légèreté et la solidité du carbone sont des avantages clés de notre casque. Ce casque est résistant aux chocs et permet d'être plus en sécurité grâce au clignotant arrière.</p>
+                <div id="prd">
+                    <img class="prd1" src="../Img/311.png">
+                    <img class="prd1" src="../Img/312.png">
+                    <img class="prd1" src="../Img/313.png">
+                </div>
+                <p>105.00€</p>
+                <form action="panier.php" method="post">
+                    <input type="hidden" name="product_name" value="Casque Clignotant Vert">
+                    <input type="hidden" name="product_price" value="82.00">
+                    <button type="submit" class="product-button">Ajouter au Panier</button>
+                </form>
+            </div>
+    
+            <!-- Ajoutez d'autres produits ici -->
+    
+        </div>
+    
+        <script src="script.js"></script>
+    </main>
+    <footer></footer>
+</body>
+</html>

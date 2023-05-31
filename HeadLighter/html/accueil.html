@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="..\CSS\accueil.css">
+    <link rel="website icon" type="png" href="..\Img\Logo.png">
+    <meta charset="utf-8">
+    <title>HeadLighter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Noto+Sans+Chorasmian&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul id="BV">
+            <li id="logo"><img src="../Img/logo.png" alt="Image" height="100" width="100"></li>
+            <li id="BV1">BIENVENUE CHEZ HEADLIGHTER</li>
+        </ul>
+        <ul id="nav">
+            <li class="nav"><a class="lien" href="accueil.html">ACCUEIL</a></li>
+            <li class="nav"><a class="lien" href="contact.html">CONTACT</a></li>
+            <li class="nav"><a class="lien" href="boutique.html">BOUTIQUE</a></li>
+            <li class="nav"><a class="lien" href="panier.php">PANIER</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="main-image"></div>
+        
+        <div id="text">
+            <h1>Accueil</h1>
+            <p>
+                Bienvenue à la présentation de l'entreprise Headlighter et de notre produit révolutionnaire : le casque de vélo et de trottinette avec clignotants intégrés.
+                Headlighter est une entreprise innovante dédiée à la sécurité des usagers de vélos et de trottinettes dans les environnements urbains.
+                Notre objectif est de fournir des solutions qui améliorent la sécurité sur la route et les pistes cyclables tout en offrant un confort exceptionnel à nos clients.
+            </p>
+              <div class="video-wrapper">
+                <video controls>
+                  <source src="..\Img\pub.mp4" type="video/mp4">
+                  Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
+            </div>
+            <button class="accordion">Qui sommes-nous ?</button>
+            <div class="panel">
+                <p>
+                    Headlighter est une entreprise innovante dédiée à la sécurité des usagers de vélos et de trottinettes dans les environnements urbains.
+                    Notre objectif est de fournir des solutions qui améliorent la sécurité sur la route et les pistes cyclables tout en offrant un confort exceptionnel à nos clients.
+                </p>
+            </div>
+            <button class="accordion">Que vendons nous ?</button>
+            <div class="panel">
+                <p>
+                    Notre casque en carbone est l'aboutissement de nombreuses recherches et d'un travail d'ingénierie minutieux. Sa conception légère en carbone garantit une protection optimale sans compromettre le confort.
+                    Les utilisateurs de nos casques peuvent profiter d'une expérience de conduite sûre et agréable, en sachant qu'ils sont bien protégés en cas d'impact.L'une des caractéristiques révolutionnaires de nos casques est l'intégration de clignotants.
+                    Grâce à ces clignotants intégrés, nos utilisateurs peuvent facilement indiquer leurs intentions de déplacement aux autres usagers de la route.
+                    Cela contribue à une meilleure communication entre les cyclistes, les trottinettistes et les automobilistes, réduisant ainsi les risques d'accidents et favorisant une cohabitation harmonieuse sur la voie publique.</p>
+        </div>
+        <button class="accordion">Pourquoi notre casque ?</button>
+            <div class="panel">
+                <p>
+                    Chez Headlighter, nous sommes fiers de contribuer à la sécurité et au bien-être des usagers de vélos et de trottinettes. Nous nous engageons à fournir des produits de haute qualité qui répondent aux normes les plus strictes en matière de sécurité et de performance.
+                    Notre casque avec clignotants intégrés est une innovation qui fait avancer la sécurité routière et facilite la vie des cyclistes et des trottinettistes. Rejoignez-nous dans notre mission de rendre les déplacements urbains à vélo ou en trottinette plus sûrs et plus agréables.
+                    Choisissez Headlighter et bénéficiez de la tranquillité d'esprit et de la protection que vous méritez sur la route.
+                </p>
+            </div>
+            
+    </main>
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/HeadLighter_pro" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/HeadLighter_pro" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/HeadLighter_pro" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+</body>
+</html>

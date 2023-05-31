@@ -1,0 +1,250 @@
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5; /* Couleur de fond */
+}
+
+#BV {
+  order: -1;
+}
+
+#logo {
+  order: -1;
+}
+
+#BV1 {
+  font-weight: bold;
+  padding: 2vw;
+  font-size: xx-large;
+}
+
+#nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.nav {
+  padding-right: 8vw;
+}
+
+#main-image {
+  width: 100%;
+  height: 500px;
+  background-image: url('https://primary.jwwb.nl/unsplash/VfUN94cUy4o.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom -200px; /* Ajuster la valeur "50px" selon vos besoins */
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.lien {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  padding: 2vw;
+}
+
+h1 {
+  
+  text-align: center;
+}
+.product {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+}
+
+.product img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.product h2 {
+  margin-top: 0;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+.product-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.product-button:hover {
+  background-color: #45a049;
+}
+
+#empty-button,
+#pay-button {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+#empty-button {
+  background-color: #f44336;
+}
+
+#pay-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#empty-button:hover,
+#pay-button:hover {
+  opacity: 0.8;
+}
+
+#text {
+  text-align: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.product-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.product-image {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.product-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff8000;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+.product-button:hover {
+  background-color: #ff8000;
+}
+
+.accordion {
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion::after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+p {
+  margin-bottom: 9vw;
+}
+
+h1 {
+  margin-bottom: 5vw;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 4px solid black;
+  border-radius: 5px;
+  margin-bottom: 5vw;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
